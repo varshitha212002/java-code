@@ -28,6 +28,8 @@ insert into player values(13,'abcdefg','M',7,16,'sachiteam','m',21,2,'white');
 insert into player values(14,'abcdefg','N',7,16,'parshuteam','n',21,2,'skyblue');
 insert into player values(15,'abcdefg','O',7,16,'snehateam','o',21,2,'skin');
 insert into player values(16,'abcdefg','P',7,16,'abishekteam','p',21,2,'darkgreen');
+insert into player (id,name_player,school_names,dress_code) values(18,'shree','jnc','merun');
+desc player;
 
 select * from player;
 select * from player where age>=17;
@@ -40,4 +42,14 @@ select * from player where age between 16 AND 19;
 select * from player where age not between 16 AND 19;
 select * from player where captain_name in ('a','b');
 select * from player where captain_name not in ('a','b');
-
+select* from player where team_name not like 'v%';
+select* from player where team_name  like '%m';
+select* from player where team_name like 'g%m';
+select* from player where team_name like '_a%';
+select* from player where team_name like '__r%';
+select*from player where age is null;
+select*from player where age is not null;
+select*from player where dress_code like '%e' OR age<20;
+select*from player where age=16  AND captain_name='a';
+select*from player order by age;
+select*from player order by age desc;
