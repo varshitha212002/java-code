@@ -53,3 +53,5 @@ select*from player where dress_code like '%e' OR age<20;
 select*from player where age=16  AND captain_name='a';
 select*from player order by age;
 select*from player order by age desc;
+select *from player where team_name is null;
+select *from player where team_name  is NOT null;
